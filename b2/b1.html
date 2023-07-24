@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        for (i = 1; i <= 10; i++) {
+            for (j = 1; j <= 10; j++) {
+                let sout;
+                sout = "";
+                for (let i = 1; i <= 10; i++) {
+                    sout = sout + "\n";
+                    for (let j = 1; j <= 10; j++) {
+                        sout = sout + " |" + i * j + "| ";
+                    }
+                    sout = sout + "\n";
+                }
+                console.log(sout);
+            }
+            let sout;
+            sout = "";
+            while (i <= 10) {
+                sout = sout + "\n";
+                while (j <= 10) {
+                    sout = sout + " |" + i * j + "| ";
+                    j++;
+                }
+                sout = sout + "\n";
+                i++;
+            }
+            console.log(sout);
+        }
+    </script>
+</body>
+
+</html>
